@@ -907,3 +907,9 @@ footer {
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn-gold, .btn-ghost { text-align: center; }
 }
+
+/* ─── ONEMOGUĆI PLAVO PODVLAČENJE TELEFONA NA MOBILNOM ─── */
+a[href^="tel"] {
+    color: inherit !important;
+    text-decoration: none !important;
+}
