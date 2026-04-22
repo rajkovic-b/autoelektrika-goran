@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FAVICON (SVG ugrađen direktno) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23080a10' stroke='%23c8b99a' stroke-width='4'/%3E%3Ctext x='50' y='72' font-family='Arial' font-size='52' font-weight='bold' fill='%23c8b99a' text-anchor='middle'%3E⚡%3C/text%3E%3C/svg%3E">
+    
+    <title>Autoelektrika Goran | Auto elektrika Žabalj – Dijagnostika, Ključevi, Anlaser</title>
+    <meta name="description" content="Autoelektrika Goran Žabalj – specijalizovana radionica za auto elektriku. Kompjuterska dijagnostika, izrada ključeva, servis anlasera i alternatora. Pozovite: +381 64 1585179">
+    <meta name="keywords" content="auto elektrika Žabalj, autoelektrika Žabalj, dijagnostika automobila, izrada ključeva automobil, servis anlasera, servis alternatora, ECU popravka, auto elektrika Novi Sad">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="RS-VO">
+    <meta name="geo.placename" content="Žabalj">
+    <meta property="og:title" content="Autoelektrika Goran – Žabalj">
+    <meta property="og:description" content="Specijalizovana radionica za auto elektriku u Žablju. Dijagnostika, ključevi, anlaser, alternator.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:locale" content="sr_RS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Povezivanje sa CSS fajlom -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org strukturirani podaci za Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "Autoelektrika Goran",
+      "description": "Specijalizovana radionica za auto elektriku u Žablju. Kompjuterska dijagnostika, izrada ključeva, servis anlasera i alternatora.",
+      "telephone": "+381641585179",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Srpskih Dobrovoljaca 26",
+        "addressLocality": "Žabalj",
+        "addressRegion": "Vojvodina",
+        "addressCountry": "RS"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "priceRange": "$$",
+      "hasMap": "https://maps.google.com/?q=Žabalj,Serbia"
+    }
+    </script>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-text">
+        🍪 Ovaj sajt koristi kolačiće za bolje korisničko iskustvo i analitiku. 
+        <a href="#" onclick="alert('Koristimo samo tehnički neophodne kolačiće.')">Saznajte više</a>
+    </div>
+    <button class="cookie-btn" id="acceptCookies">Prihvatam</button>
+</div>
+
+<!-- NAV -->
+<nav id="top">
+    <div class="logo">
+        AUTO ELEKTRIKA
+        <small>GORAN · ŽABALJ</small>
+    </div>
+    <button class="menu-toggle" aria-label="Meni">☰</button>
+    <ul class="nav-links">
+        <li><a href="#top">POČETNA</a></li>
+        <li><a href="#usluge">USLUGE</a></li>
+        <li><a href="#o-nama">O NAMA</a></li>
+        <li><a href="#faq">PITANJA</a></li>
+        <li><a href="#kontakt">KONTAKT</a></li>
+        <li><a href="#mapa">MAPA</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:8px;">
+        <button class="nav-cta" onclick="window.location.href='tel:+381641585179'">📞 ZAKAŽI</button>
+        <button class="theme-toggle" id="themeToggleBtn" aria-label="Promeni temu">🌓</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" role="banner">
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+    <div class="hero-ring"></div>
+
+    <div class="hero-badge">✦ SPECIJALIZOVANA RADIONICA ✦</div>
+    <h1>Autoelektrika<br>Goran</h1>
+    <div class="hero-city">ŽABALJ · VOJVODINA</div>
+    <p class="hero-desc">
+        Kompjuterska dijagnostika, izrada auto ključeva, servis anlasera i alternatora — sve na jednom mestu. Više od 19 godina iskustva u auto elektrici.
+    </p>
+    <div class="hero-actions">
+        <button class="btn-gold" onclick="window.location.href='tel:+381641585179'">📞 Pozovite nas</button>
+        <button class="btn-ghost" onclick="document.getElementById('usluge').scrollIntoView({behavior:'smooth'})">Pogledajte usluge</button>
+    </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar" role="complementary" aria-label="Kontakt informacije">
+    <div class="stat-item">
+        <div class="stat-num">+381 64 1585179</div>
+        <div class="stat-label">TELEFON / VIBER</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-num">08:00 – 17:00</div>
+        <div class="stat-label">PON–PET, RADNO VREME</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-num">ŽABALJ</div>
+        <div class="stat-label">LOKACIJA</div>
+    </div>
+</div>
+
+<!-- COUNTER STATS -->
+<div class="counter-section">
+    <div class="counter-grid">
+        <div class="counter-item reveal">
+            <div class="counter-number" id="counter1" data-target="19">0</div>
+            <div class="counter-label">Godina iskustva</div>
+        </div>
+        <div class="counter-item reveal">
+            <div class="counter-number" id="counter2" data-target="3850">0</div>
+            <div class="counter-label">Zadovoljnih vozača</div>
+        </div>
+        <div class="counter-item reveal">
+            <div class="counter-number" id="counter3" data-target="100">0<span class="counter-suffix">%</span></div>
+            <div class="counter-label">Sigurnost usluge</div>
+        </div>
+    </div>
+</div>
+
+<!-- USLUGE -->
+<section class="section" id="usluge" aria-labelledby="usluge-title">
+    <div class="section-eyebrow">✦ ŠTA RADIMO ✦</div>
+    <h2 class="section-heading" id="usluge-title">Naše usluge</h2>
+    <p class="section-sub">Specijalizovani smo za sva pitanja auto elektronike — od brze dijagnostike do kompletne popravke.</p>
+
+    <div class="services-grid">
+        <div class="service-card reveal">
+            <div class="service-icon">🔑</div>
+            <h3>Izrada auto ključeva</h3>
+            <p>Programiranje i izrada ključeva za sve marke i modele automobila. Izgubili ste ključ? Rešavamo u roku od sat vremena.</p>
+            <span class="service-tag">SVE MARKE</span>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-icon">⚙️</div>
+            <h3>Servis anlasera</h3>
+            <p>Dijagnostika, remont i zamena anlasera. Brzo otkrivamo kvar i vraćamo vaš automobil u pogon.</p>
+            <span class="service-tag">DIJAGNOSTIKA + POPRAVKA</span>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-icon">🔋</div>
+            <h3>Servis alternatora</h3>
+            <p>Provera i popravka sistema punjenja. Sprečavamo ozbiljnije kvarove blagovremenom dijagnostikom.</p>
+            <span class="service-tag">SISTEM PUNJENJA</span>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-icon">💻</div>
+            <h3>Kompjuterska dijagnostika</h3>
+            <p>Profesionalna OBD dijagnostika sa vrhunskom opremom. Čitamo i brišemo greške, analiziramo sve sisteme vozila.</p>
+            <span class="service-tag">OBD DIJAGNOSTIKA</span>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-icon">🖥️</div>
+            <h3>Popravka auto računara</h3>
+            <p>Servis i reprogramiranje ECU jedinica (upravljačkih računara). Rešavamo probleme koji drugi ne mogu.</p>
+            <span class="service-tag">ECU · MODUL</span>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-icon">⚡</div>
+            <h3>Elektro instalacije</h3>
+            <p>Dijagnostika i popravka kompletne auto instalacije. Kratki spojevi, oštećeni kablovi, problemi sa osiguračima.</p>
+            <span class="service-tag">KOMPLETAN SERVIS</span>
+        </div>
+    </div>
+</section>
+
+<!-- O NAMA -->
+<section class="section" id="o-nama" aria-labelledby="onama-title">
+    <div class="section-eyebrow">✦ KO SMO MI ✦</div>
+    <h2 class="section-heading" id="onama-title">O nama</h2>
+
+    <div class="about-grid">
+        <div class="reveal-left">
+            <ul class="about-list">
+                <li class="reveal">
+                    <span class="about-check">✦</span>
+                    <div>
+                        <strong>Dugogodišnje iskustvo</strong>
+                        <span>Više od 19 godina rada u auto elektrici — znamo šta radimo.</span>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <span class="about-check">✦</span>
+                    <div>
+                        <strong>Moderna oprema</strong>
+                        <span>Koristimo profesionalnu dijagnostičku opremu za tačne rezultate.</span>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <span class="about-check">✦</span>
+                    <div>
+                        <strong>Fer cene, bez iznenađenja</strong>
+                        <span>Cenu dogovaramo unapred — nema skrivenih troškova.</span>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <span class="about-check">✦</span>
+                    <div>
+                        <strong>Brza usluga</strong>
+                        <span>Poštujemo vaše vreme — kvarove rešavamo u što kraćem roku.</span>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <span class="about-check">✦</span>
+                    <div>
+                        <strong>Terenska intervencija</strong>
+                        <span>Dolazimo na teren uz prethodni dogovor ako ne možete da dođete sami.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="quote-box reveal-right">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">Svaki automobil tretiramo sa istom pažnjom — od prve dijagnostike do finalne popravke. Zadovoljstvo mušterije je naš prioritet."</p>
+            <div class="quote-author">— Goran, vlasnik radionice</div>
+        </div>
+    </div>
+</section>
+
+<!-- BRENDOVI -->
+<section class="section" aria-label="Brendovi koje servisiramo">
+    <div class="section-eyebrow">✦ BRENDOVI ✦</div>
+    <h2 class="section-heading">Servisiramo sve marke</h2>
+    <p class="section-sub">Radimo sa svim popularna marke automobila na tržištu Srbije.</p>
+    <div class="brands-grid">
+        <div class="brand-item reveal">Audi</div>
+        <div class="brand-item reveal">BMW</div>
+        <div class="brand-item reveal">Mercedes</div>
+        <div class="brand-item reveal">Volkswagen</div>
+        <div class="brand-item reveal">Škoda</div>
+        <div class="brand-item reveal">Ford</div>
+        <div class="brand-item reveal">Opel</div>
+        <div class="brand-item reveal">Renault</div>
+        <div class="brand-item reveal">Peugeot</div>
+        <div class="brand-item reveal">Toyota</div>
+        <div class="brand-item reveal">Honda</div>
+        <div class="brand-item reveal">Hyundai</div>
+        <div class="brand-item reveal">Kia</div>
+        <div class="brand-item reveal">Nissan</div>
+        <div class="brand-item reveal">Mazda</div>
+        <div class="brand-item reveal">Fiat</div>
+        <div class="brand-item reveal">Citroen</div>
+        <div class="brand-item reveal">Suzuki</div>
+        <div class="brand-item reveal">Dacia</div>
+        <div class="brand-item reveal">Seat</div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="section-eyebrow">✦ PITANJA I ODGOVORI ✦</div>
+    <h2 class="section-heading" id="faq-title">Često postavljana pitanja</h2>
+
+    <div class="faq-list">
+        <div class="faq-item reveal">
+            <div class="faq-question" aria-expanded="false">
+                <span>🔑 Koliko traje izrada novog ključa?</span>
+                <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-answer">Izrada i programiranje ključa traje između 30 i 60 minuta, u zavisnosti od marke i modela vozila. Preporučujemo da unapred pozovete kako bismo proverili da imamo odgovarajući blank ključa.</div>
+        </div>
+        <div class="faq-item reveal">
+            <div class="faq-question" aria-expanded="false">
+                <span>💰 Kako mogu da saznam cenu popravke?</span>
+                <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-answer">Cenu ne možemo precizno reći bez dijagnostike, jer zavisi od konkretnog kvara i vozila. Pozovite nas — opisite simptom, i dati ćemo vam okvirnu procenu. Finalna cena se dogovara pre početka rada, bez iznenađenja.</div>
+        </div>
+        <div class="faq-item reveal">
+            <div class="faq-question" aria-expanded="false">
+                <span>🚗 Da li dolazite na teren?</span>
+                <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-answer">Da, uz prethodni dogovor. Terenska intervencija je moguća u Žablju i okolini. Pozovite nas i dogovorimo detalje.</div>
+        </div>
+        <div class="faq-item reveal">
+            <div class="faq-question" aria-expanded="false">
+                <span>📅 Da li je potrebno zakazati termin?</span>
+                <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-answer">Zakazivanje nije obavezno, ali je preporučljivo — posebno za složenije poslove kao što su izrada ključeva ili ECU popravka. Za dijagnostiku uglavnom možete doći i bez termina.</div>
+        </div>
+        <div class="faq-item reveal">
+            <div class="faq-question" aria-expanded="false">
+                <span>⚡ Koji kvarovi su najčešći na auto elektrici?</span>
+                <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-answer">Najčešće se javljaju problemi sa anlaserom (automobil ne pali), alternatorom (baterija se prazni), kratki spojevi u instalaciji i greške na upravljačkim računarima (lampice na tabli). Svi ovi kvarovi su rešivi — kontaktirajte nas.</div>
+        </div>
+    </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section" id="kontakt" aria-labelledby="kontakt-title">
+    <div class="contact-wrapper reveal">
+        <div class="section-eyebrow" style="color: var(--gold);">✦ KONTAKT ✦</div>
+        <h2 class="section-heading" id="kontakt-title" style="color: var(--gold);">Kako do nas</h2>
+        <p style="color: var(--text-muted); font-size: 14px; max-width: 400px; margin: 0 auto;">Slobodno nas pozovite ili pošaljite poruku — tu smo da pomognemo.</p>
+
+        <div class="contact-cards">
+            <div class="contact-card">
+                <span class="contact-icon">📞</span>
+                <strong>TELEFON</strong>
+                <p>+381 64 1585179</p>
+            </div>
+            <div class="contact-card">
+                <span class="contact-icon">📍</span>
+                <strong>LOKACIJA</strong>
+                <p>Srpskih Dobrovoljaca 26<br>Žabalj, Vojvodina</p>
+            </div>
+            <div class="contact-card">
+                <span class="contact-icon">🕐</span>
+                <strong>RADNO VREME</strong>
+                <p>Pon–Pet: 08:00–17:00h</p>
+            </div>
+        </div>
+
+        <!-- STATUS RADNOG VREMENA -->
+        <div class="status-card" id="statusCard">
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot"></span>
+                <span id="statusText">Proveravam...</span>
+            </div>
+            <div class="working-hours">
+                <span>Pon–Pet: <strong>08:00–17:00</strong></span>
+                <span>Subota: <strong>Zatvoreno</strong></span>
+                <span>Nedelja: <strong>Zatvoreno</strong></span>
+            </div>
+        </div>
+
+        <button class="btn-gold" style="font-size: 14px; padding: 16px 44px;" onclick="window.location.href='tel:+381641585179'">
+            📞 POZOVITE ODMAH
+        </button>
+        <p class="viber-note">📲 Dostupni i na Viberu</p>
+    </div>
+</section>
+
+<!-- MAPA -->
+<section class="section" id="mapa" aria-labelledby="mapa-title">
+    <div class="section-eyebrow">✦ PRONAĐITE NAS ✦</div>
+    <h2 class="section-heading" id="mapa-title">Naša lokacija</h2>
+    <p class="section-sub">Nalazimo se u Žablju, Vojvodina. Kliknite na mapu za navigaciju.</p>
+    <div class="map-wrapper reveal">
+        <iframe
+            title="Autoelektrika Goran - Žabalj lokacija"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.5!2d20.064258!3d45.377646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDIyJzM5LjUiTiAyMMKwMDMnNTEuMyJF!5e0!3m2!1ssr!2srs!4v1234567890"
+            width="100%"
+            height="420"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a
+            href="https://maps.google.com/?q=45.377646,20.064258"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-directions-btn">
+            🗺️ Otvori u Google Maps
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div>© 2025 AUTO ELEKTRIKA GORAN · ŽABALJ</div>
+    <div style="margin-top: 4px;">Srpskih Dobrovoljaca 26 · +381 64 1585179 · Pon–Pet 08–17h</div>
+</footer>
+
+<a href="tel:+381641585179" class="call-float" aria-label="Pozovite nas">
+    📞 POZOVI
+</a>
+
+<!-- Povezivanje sa JavaScript fajlom -->
+<script src="script.js"></script>
+</body>
+</html>
